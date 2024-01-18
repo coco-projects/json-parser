@@ -4,7 +4,7 @@
 
     require '../vendor/autoload.php';
 
-    $source = 'data/service.json';
+    $source = 'data/test1.json';
 
 //    $parser = new JsonParser($source);
     $parser = JsonParser::parse($source);

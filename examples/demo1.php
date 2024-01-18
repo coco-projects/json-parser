@@ -4,11 +4,10 @@
 
     require '../vendor/autoload.php';
 
-    $source = 'https://randomuser.me/api/1.4?seed=json-parser&results=5';
-    $source = 'data/service.json';
+    $source = 'data/test1.json';
 
-//    $parser = new JsonParser($source);
-    $parser = JsonParser::parse($source);
+    $parser = new JsonParser($source);
+//    $parser = JsonParser::parse($source);
 
     try
     {

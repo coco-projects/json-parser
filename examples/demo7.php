@@ -4,12 +4,12 @@
 
     require '../vendor/autoload.php';
 
-    $source = 'data/test1.json';
+    $source = 'data/test2.json';
 
 //    $parser = new JsonParser($source);
     $parser = JsonParser::parse($source);
 
-    $parser = $parser->pointer('/-/name');
+    $parser = $parser->pointer('/data/user/-');
 
     foreach ($parser as $key => $value)
     {
