@@ -12,5 +12,6 @@
     $parser->traverse(function(mixed $value, string|int $key, JsonParser $parser) {
 
         print_r($value);
+        echo PHP_EOL;
     });
 
